@@ -3,6 +3,14 @@ function takeANumber(katzDeli, newClient) {
 	return ('Welcome, ' + newClient + '. You are number ' + katzDeli.length + ' in line.')
 }
 
+
+var newSpot = 1
+function giveANumber(katzDeli) {
+	newSpot = newSpot + 1
+			katzDeli.push(newSpot);
+	return ('Welcome, ' + newSpot + '. You are number ' + katzDeli.length + ' in line.')
+}
+
 function nowServing (katzDeliLine) {
     if(katzDeliLine.length===0) {
     return 'There is nobody waiting to be served!';
